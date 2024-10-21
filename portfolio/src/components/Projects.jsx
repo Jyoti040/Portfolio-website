@@ -9,39 +9,39 @@ const projects = [
     {
         image : EcoEngage,
         name : 'EcoEngage',
-        github : '',
-        website : '',
-        description : '',
+        github : 'https://github.com/Jyoti040/Eco-Engage',
+        website : 'https://eco-engage-front-end.vercel.app/',
+        description : 'A MERN stack application that connects organisations and individuals for environmental initatives . It allows users to participate and track their activities and organisations to post eco friendly events.key features are user authentication and profile management , seperate organisation dashboard and responsive design. ',
         techStack : ['NodeJS','ExpressJS','MongoDb','ReactJs']
     },
     {
         image : societyManagement,
         name : 'Society Management Project',
-        github : '',
-        website : '',
-        description : '',
-        techStack : ['ReactJs','TailwindCSS','Typescipt','Axios','ChartJS']
+        github : 'https://github.com/Jyoti040/SocietyManagementFrontend/tree/master',
+        website : 'https://societymanagementfrontend-h3v3.onrender.com/',
+        description : 'It is a unified platform for managing Societies built using ReactJS , Typescript in frontend and Go , MySql in backend .It is designed to develop module for our college. The website serves as a platform to showcase various details about societies in the college .',
+        techStack : ['ReactJs','TailwindCSS','Typescipt','Axios','ChartJS','Go','MySql']
     },
     {
         image : blogsApp,
         name : 'Blogs App',
-        github : '',
-        website : '',
+        github : 'https://github.com/Jyoti040/blogs_app_appwrite',
+        website : 'https://blogs-app-appwrite-tau.vercel.app/',
         description : 'A full-stack blog application built with React and Redux for the front end, and Appwrite for the back end. This application allows users to create, read, update, and delete blog posts with a seamless user experience.',
         techStack : ['ReactJS','Boostrap','Appwrite','Redux']
     },
     {
         image : weatherApp,
         name : 'Weather App',
-        github : '',
-        website : '',
+        github : 'https://github.com/Jyoti040/Weather-app-jyoti',
+        website : 'https://replit.com/@jyotiahuja822/Weather-app',
         description : 'A responsive and dynamic weather application that fetches and displays real-time weather data using oprn weather api ',
         techStack : ['HTML','CSS','Javascript','Open Weather API']
     },
 ]
 const Projects = () => {
   return (
-    <div className='mt-10 flex justify-center items-center' id='#projects'>
+    <div className='mt-10 flex justify-center items-center' id='projects'>
         <div>
             <h1 className='text-lightBlue text-4xl font-semibold flex justify-center'>Projects</h1>
             <div className='grid grid-cols-1 lg:grid-cols-2 px-6 gap-10 lg:px-60 lg:gap-20 mt-10'>

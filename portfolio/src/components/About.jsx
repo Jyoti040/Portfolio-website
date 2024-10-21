@@ -41,7 +41,7 @@ const Typewriter = ({text,speed})=>{
 }
 
   return (
-    <div className='mt-10 flex justify-center items-center' id='#about'>
+    <div className='mt-10 flex justify-center items-center' id='about'>
         <div className=''>
            <h2 className='text-3xl lg:text-5xl text-lightBlue font-semibold flex justify-center'> Hey , I'm Jyoti</h2>
            <h3 className='pt-4 text-lg flex justify-center'>

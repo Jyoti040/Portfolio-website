@@ -20,7 +20,7 @@ const skills = [
        name : 'CSS'
     },
     {
-        name : 'Tailwind'
+        name : 'TailwindCSS'
     },
     {
         name : 'ReactJS'
@@ -55,7 +55,7 @@ const skills = [
 ]
 const Skills = () => {
   return (
-    <div className='mt-10 flex justify-center items-center' id='#skills'>
+    <div className='mt-10 flex justify-center items-center' id='skills'>
         <div>
         <h1 className='text-lightBlue text-4xl font-semibold flex justify-center'>Skills</h1>
         <br/>
