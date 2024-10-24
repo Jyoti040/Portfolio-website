@@ -1,4 +1,6 @@
 import React from 'react'
+import {motion} from 'framer-motion'
+import { fadeIn } from '../variants'
 
 const experiences = [
     {
@@ -23,8 +25,23 @@ const Experience = () => {
     return (
         <div className='mt-10 flex justify-center items-center ' id='experience'>
             <div className='lg:max-w-7xl'>
-                <h1 className='text-lightBlue text-4xl font-semibold flex justify-center mb-6'>Experience</h1>
-                {
+                <motion.div
+                
+                variants={fadeIn("up",0.1)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once:false , amount:0.5}}>
+                    <h1 className='text-lightBlue text-4xl font-semibold flex justify-center mb-6'>Experience</h1>
+                </motion.div>
+
+               <motion.div
+                    variants={fadeIn("down",0.1)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once:false , amount:0.5}}
+               >
+                
+               {
                     experiences.map((experience, index) => (
                         <div key={index} className='border border-peacockGreen mx-4 px-3 py-5 lg:mx-3 lg:px-2 lg:py-4 lg:p-4 mb-7 border-lg rounded-md'>
                             <div className='flex justify-between '>
@@ -41,6 +58,7 @@ const Experience = () => {
                         </div>
                     ))
                 }
+                </motion.div> 
             </div>
         </div>
     )

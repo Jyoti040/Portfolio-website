@@ -4,6 +4,8 @@ import blogsApp from '../assets/blogs-app.png'
 import societyManagement from '../assets/society-management.png'
 import EcoEngage from '../assets/EcoEngage.png'
 import {GithubIcon , ArrowUpRightFromSquare} from 'lucide-react'
+import {motion} from 'framer-motion'
+import { fadeIn , borderAnimation } from '../variants'
 
 const projects = [
     {
@@ -41,17 +43,33 @@ const projects = [
 ]
 const Projects = () => {
   return (
-    <div className='mt-10 flex justify-center items-center' id='projects'>
+    <motion.div 
+    className='mt-10 flex justify-center items-center' id='projects'>
         <div>
-            <h1 className='text-lightBlue text-4xl font-semibold flex justify-center'>Projects</h1>
-            <div className='grid grid-cols-1 lg:grid-cols-2 px-6 gap-10 lg:px-60 lg:gap-20 mt-10'>
+            <motion.div
+            variants={fadeIn("left",0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once:false , amount:0.5}}>
+
+<h1 className='text-lightBlue text-4xl font-semibold flex justify-center'>Projects</h1>
+            </motion.div>
+            <motion.div 
+             variants={fadeIn("right",0.4)}
+             initial="hidden"
+             whileInView={"show"}
+             viewport={{once:false , amount:0.5}}
+            className='grid grid-cols-1 lg:grid-cols-2 px-6 gap-10 lg:px-60 lg:gap-20 mt-10'>
                  {
                     projects.map((project,index)=>(
-                         <div key={index} className='flex flex-col space-y-6'>
+                         <motion.div key={index}
+                         
+                         className='flex flex-col space-y-6 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 '>
+                            <div className='p-2 h-full w-full bg-black'>
                             <div>
                                 <img src={project.image} alt='project-home-img' className='w-full h-full rounded-xl'/>
                             </div>
-                            <div>
+                            <div className='pt-3'>
                                 <div className='flex justify-between'>
                                     <h1 className='text-xl'>{project.name}</h1>
                                     <div className='flex space-x-4 text-xl'>
@@ -72,12 +90,13 @@ const Projects = () => {
                                    </div>
                                 </div>
                             </div>
-                         </div>
+                            </div>
+                         </motion.div>
                     ))
                  }
-            </div>
+            </motion.div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

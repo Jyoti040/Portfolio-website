@@ -1,4 +1,5 @@
 import React , {useState,useEffect} from 'react'
+import {motion} from 'framer-motion'
 
 const About = () => {
     
@@ -51,9 +52,9 @@ const Typewriter = ({text,speed})=>{
             I am a MERN stack <br/> web developer .  I am also an open source enthusiast.
            </h2>
            <div className='flex justify-center mt-6'>
-             <button className='border border-lightBlue py-3 px-4 border-md text-md lg:text-lg' >
+             <motion.button whileTap={{ scale: 0.85 }} className='border border-lightBlue py-3 px-4 border-md text-md lg:text-lg' >
                 <a href='/#contact'>Contact Me</a>
-             </button>
+             </motion.button>
            </div>
         </div>
     </div>
