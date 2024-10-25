@@ -28,7 +28,7 @@ const Navbar = () => {
             <div className={`${isActive==='Projects' ? isActiveClass : ''}`} onClick={()=>{
                 if(isActive !== 'Projects') setIsActive('Projects')
             }}>
-                <a href='#projects'>Projects</a>
+                <a href='/#projects'>Projects</a>
             </div>
             <div className={`${isActive==='Experience' ? isActiveClass : ''}`} onClick={()=>{
                 if(isActive !== 'Experience') setIsActive('Experience')
