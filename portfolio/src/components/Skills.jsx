@@ -78,7 +78,7 @@ const Skills = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{once:false , amount:0.2}}
-        className='grid grid-cols-2 lg:grid-cols-5 gap-4 '>
+        className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 '>
             {
                 skills.map((skill)=>(
                     <div className='flex border border-peacockGreen py-2 px-3 text-center'>

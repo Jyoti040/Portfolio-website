@@ -55,23 +55,27 @@ const Projects = () => {
                     <h1 className='text-lightBlue text-4xl font-semibold flex justify-center'>Projects</h1>
                 </motion.div>
                 <motion.div
-                    variants={fadeIn("right", 0.4)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: false, amount: 0.5 }}
+                    // variants={fadeIn("right", 0.4)}
+                    // initial="hidden"
+                    // whileInView={"show"}
+                    // viewport={{ once: false, amount: 0.5 }}
                     className='grid grid-cols-1 lg:grid-cols-2 px-6 gap-10 lg:px-60 lg:gap-20 mt-10'>
                     {
                         projects.map((project, index) => (
                             <motion.div key={index}
-                            whileHover={{scale: 1.05}}
-                                className='flex flex-col space-y-6 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 border border-peacockGreen border-2 hover:border hover:border-lightBlue hover:border-4 rounded-lg'>
+                            // whileHover={{scale: 1.05}}
+                            variants={fadeIn("right", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.5 }}
+                                className='flex flex-col space-y-6 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 border border-peacockGreen border-2 hover:border hover:border-lightBlue hover:border-4 rounded-lg max-w-lg lg:max-w-xl'>
                                 <div className='p-3 h-full w-full bg-black'>
                                     <div>
-                                        <img src={project.image} alt='project-home-img' className='w-full h-full rounded-xl' />
+                                        <img src={project.image} alt='project-home-img' className='lg:w-full h-full rounded-xl' />
                                     </div>
                                     <div className='pt-3'>
                                         <div className='flex justify-between'>
-                                            <h1 className='text-xl'>{project.name}</h1>
+                                            <h1 className='text-xl font-bold'>{project.name}</h1>
                                             <div className='flex space-x-4 text-xl'>
                                                 <div>
                                                     <a href={`${project.github}`} target='_blank'><GithubIcon /></a>

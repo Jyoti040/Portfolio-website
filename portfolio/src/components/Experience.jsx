@@ -48,7 +48,7 @@ const Experience = () => {
                         key={index} className='border border-peacockGreen mx-4 px-3 py-5 lg:mx-3 lg:px-2 lg:py-4 lg:p-4 mb-7 border-lg rounded-md'>
                             <div className='flex justify-between '>
                                 <div>
-                                    <h1 className='text-lg lg:text-xl font-semibold'>{experience.name}</h1>
+                                    <h1 className='text-lg lg:text-xl font-bold'>{experience.name}</h1>
                                     <h2 className='text-md lg:text-lg '><i>{experience.role}</i></h2>
                                 </div>
                                 <div>

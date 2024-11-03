@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
  <nav className='navbar sticky top-4'>
        <div>
-        <div className='hidden md:flex space-x-8 z-10 bg-black items-center justify-center mt-6 mx-96  py-4 border border-peacockGreen rounded-full cursor-pointer'>
+        <div className='hidden lg:flex space-x-8 z-10 bg-black items-center justify-center mt-6 mx-96  py-4 border border-peacockGreen rounded-full cursor-pointer'>
             <div className={`${isActive==='About' ? isActiveClass : ''}`} onClick={()=>{
                 if(isActive !== 'About') setIsActive('About')
             }}>
@@ -41,7 +41,7 @@ const Navbar = () => {
                 <a href='/#contact'>Contact</a>
             </div>
         </div>
-        <div className='md:hidden flex items-center justify-between mt-4 mx-4 z-10 bg-black px-4 border border-peacockGreen rounded-full cursor-pointer'>
+        <div className='lg:hidden flex items-center justify-between mt-4 mx-4 z-10 bg-black px-4 border border-peacockGreen rounded-full cursor-pointer'>
       <div className='text-lg text-lightBlue'>Jyoti</div>
       <div>
         <div className='relative inline-block text-center'>
