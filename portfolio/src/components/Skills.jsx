@@ -54,7 +54,20 @@ const skills = [
     {
         name : 'Typescript'
     },
+    {
+        name : 'Redux'
+    },
+    {
+        name : 'Socket.IO'
+    },
+    {
+        name : 'Data Structures'
+    },
+    {
+        name : 'Algorithms'
+    },
 ]
+
 const Skills = () => {
   return (
     <div 

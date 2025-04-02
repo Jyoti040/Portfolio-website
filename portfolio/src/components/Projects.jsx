@@ -3,11 +3,20 @@ import weatherApp from '../assets/weather-app.png'
 import blogsApp from '../assets/blogs-app.png'
 import societyManagement from '../assets/society-management.png'
 import EcoEngage from '../assets/EcoEngage.png'
+import ChatApp from '../assets/chat-app.png'
 import { GithubIcon, ArrowUpRightFromSquare } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { fadeIn, borderAnimation } from '../variants'
 
 const projects = [
+    {
+        image: ChatApp,
+        name: 'ChatApp',
+        github: 'https://github.com/Jyoti040/chat-app',
+        website: 'https://github.com/Jyoti040/chat-app',
+        description: 'A real-time chat application with one-on-one and group messaging, state management using redux, supporting multimedia sharing. Integrated Socket.IO for real time communication and implemented infinite scrolling for optimized chat loading. Configured Nginx as a reverse proxy to enhance performance and scalability of the application. ',
+        techStack: ['NodeJS', 'ExpressJS', 'MongoDb', 'ReactJs','Redux','Socket.IO']
+    },
     {
         image: EcoEngage,
         name: 'EcoEngage',
@@ -41,6 +50,7 @@ const projects = [
         techStack: ['HTML', 'CSS', 'Javascript', 'Open Weather API']
     },
 ]
+
 const Projects = () => {
     return (
         <motion.div
