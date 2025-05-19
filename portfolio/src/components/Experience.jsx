@@ -4,12 +4,12 @@ import { fadeIn } from '../variants'
 
 const experiences = [
     {
-        name: 'Summer Training ',
+        name: 'Bhagwan Parshuram Insitute Of Technology',
         image: '',
-        date: 'August 2024',
-        role: 'Frontend developer',
+        date: 'June 2024 - July 2024',
+        role: 'Frontend development Intern',
         place: 'New Delhi , India',
-        description: 'I have contributed to development to SOCIETY MANAGEMENT PROJECT , worked in the frontend team . I have designed and implemented user friendly interfaces and gained hands on experience in various frontend technologies as well as API integration.',
+        description: 'Engineered highly responsive, user-centric interfaces using React.js, TypeScript, and TailwindCSS, optimizing performance and enhancing the overall user experience. Integrated RESTful API using Axios, streamlining data fetching and enhancing seamless communication between the frontend and backend. ',
     },
     {
         name: 'The nameSpace Community',
@@ -17,7 +17,7 @@ const experiences = [
         date: 'August 2024 - present',
         role: 'Marketing and PR head',
         place: 'New Delhi , India',
-        description: 'As the head of team , I have collaborated with various technical communitites to organise events . I was the part of core team of  HACKHAZARDS , GGSIPU"s  one of the largest offline hackathon. '
+        description: 'Headed the marketing team, collaborating with multiple technical communities to enhance events visibility , fostering engagement and growth. Core team member for HACKHAZARDS , GGSIPU’s largest offline hackathons with 2500+ participants . '
     },
    
 ]
